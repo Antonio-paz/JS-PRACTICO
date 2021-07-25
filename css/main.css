@@ -17,3 +17,17 @@ body{
     font-family: fantasy;
     margin: 0px;
 }
+
+.cuadrado{
+    margin-top: 100px;
+    padding: 30px;
+    max-width: 500px;
+    max-height: 200px;
+    background-color: #ffff;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.cuadrado button {
+    margin: 10px;
+}
