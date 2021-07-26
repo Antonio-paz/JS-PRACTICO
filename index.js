@@ -94,3 +94,13 @@ function areaCirculo(radio) {
      
      alert("El resultado del triangulo es: " + resultado)
  }
+
+ function calcularCirculo(){
+     const inputradio = document.getElementById("radio");
+     const valor = inputradio.value;
+
+     const resultadoPerimetro = perimetroCirculo(valor);
+     const resultadoArea =  areaCirculo(valor);
+
+     alert("El resultado del perimetro es: " + resultadoPerimetro + " y El área es: " + resultadoArea)
+ }

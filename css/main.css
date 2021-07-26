@@ -31,3 +31,8 @@ body{
 .cuadrado button {
     margin: 10px;
 }
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}

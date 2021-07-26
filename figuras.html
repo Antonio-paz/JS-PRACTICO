@@ -14,45 +14,60 @@
         <p>Calcula los perimetros y areas de tus figuras favoritasxs</p>
     </header>
 
-    <section class="cuadrado">
-        <h2>Calcula el área y perimetro de un cuadrado 🟦</h2>
-
-        <form>
-            <label>
-                Escibe cuanto mide cada lado del cuadrado 
-                <input placeholder="lado del cuadrado" id="inputCuadrado" type="number">
-            </label>
+    <div class="contenedor">
+        <div class="contenedor2">
+            <section class="cuadrado">
+                <h2>Calcula el área y perimetro de un cuadrado 🟦</h2>
+        
+                <form>
+                    <label>
+                        Escibe cuanto mide cada lado del cuadrado 
+                        <input placeholder="lado del cuadrado" id="inputCuadrado" type="number">
+                    </label>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="button" onclick="calcularPerimetroCuadrado()" >Calcular Perimetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
+                </form>
+            </section>
             <br>
+            <section class="cuadrado">
+                <h3>Calcula la altura de un triangulo isósceles 🔺</h3>
+                <form>
+                    <label>
+                        Escribe cuanto mide el primer lado
+                        <input type="number"  id="lado1" placeholder="lado1">
+                    </label>
+                    <br>
+                    <label>
+                        Escribe cuanto mide el segundo lado
+                        <input type="number"  id="lado2" placeholder="lado2">
+                    </label>
+                    <br>
+                    <label">
+                        Escribe Cuánto mide el lado base
+                        <input type="number" id="base" placeholder="base">
+                    </label>
+                    <br>
+        
+                    <button type="button" onclick="calcularAlturaTrianguloIso()">Calcular Altura</button>
+                </form>
+        
+            </section>
             <br>
-            <br>
-            <button type="button" onclick="calcularPerimetroCuadrado()" >Calcular Perimetro</button>
-            <button type="button" onclick="calcularAreaCuadrado()">Calcular Area</button>
-        </form>
-    </section>
-
-    <section class="cuadrado">
-        <h3>Calcula la altura de un triangulo isósceles 🔺</h3>
-        <form>
-            <label>
-                Escribe cuanto mide el primer lado
-                <input type="number"  id="lado1" placeholder="lado1">
-            </label>
-            <br>
-            <label>
-                Escribe cuanto mide el segundo lado
-                <input type="text"  id="lado2" placeholder="lado2">
-            </label>
-            <br>
-            <label">
-                Escribe Cuánto mide el lado base
-                <input type="text" id="base" placeholder="base">
-            </label>
-            <br>
-
-            <button type="button" onclick="calcularAlturaTrianguloIso()">Calcular Altura</button>
-        </form>
-
-    </section>
+            <section class="cuadrado">
+                <h3>Calcula el perimetro y área de un circulo 🔴</h3>
+                <form>
+                    <label>
+                        Escribe el radio del circulo
+                        <input type="number" id="radio">
+                    </label> 
+                    <button type="button" onclick="calcularCirculo()">Calcular área y perimetro</button>
+                </form>
+            </section>
+        </div>
+    </div>
 
     
 
