@@ -17,14 +17,32 @@ function areaCuadrado (lado) {
 //codigo triangulo
 
 
-function perimetroTriangulo (lado1, lado2, base){
-    return lado1 + lado2 + base
-}
+//function perimetroTriangulo (lado1, lado2, base){
+   // return lado1 + lado2 + base
+//}
 
-function areaTriangulo (base, altura){
-    return (base * altura)/2
-}
+//function areaTriangulo (base, altura){
+    //return (base * altura)/2
+//}
 
+//triangulo isosceles
+
+function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeLadoB, trianguloGrandeLadoBase) {
+    if (trianguloGrandeLadoA != trianguloGrandeLadoB) {
+        console.error("Los lados a y b no son iguales");
+    } else {
+        const trianguloPequenoLadoB = trianguloGrandeLadoBase / 2;
+        const trianguloPequenoLadoBase = trianguloGrandeLadoA;
+
+        const trianguloPequenoLadoBCuadrado = trianguloPequenoLadoB * trianguloPequenoLadoB;
+        const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase * trianguloPequenoLadoBase;
+
+        const trianguloPequenoLadoA = Math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
+
+        const trianguloGrandeAltura = trianguloPequenoLadoA;
+        return trianguloGrandeAltura;
+    }
+}
 
 
 //codigo del circulo
@@ -61,4 +79,18 @@ function areaCirculo(radio) {
 
      const resultadoArea = areaCuadrado(valor);
      alert("El resultado del area es: " + resultadoArea)
+ }
+ 
+ function calcularAlturaTrianguloIso() {
+     const inputUno = document.getElementById("lado1");
+     const inputDos = document.getElementById("lado2");
+     const inputBase = document.getElementById("base");
+
+     const valorUno = inputUno.value;
+     const valorDos = inputDos.value;
+     const valorBase = inputBase.value;
+
+     const resultado = alturaTrianguloIsosceles(valorUno, valorDos, valorBase)
+     
+     alert("El resultado del triangulo es: " + resultado)
  }
